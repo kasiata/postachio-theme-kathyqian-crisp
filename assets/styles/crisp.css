@@ -62,7 +62,7 @@ h2 {
 	margin-bottom: 0.7em;	
 }
 h3 {
-	font-size:0.5em;
+	font-size:0.9em;
 	line-height: 1.3em;
 	margin-top: 0.6em;
 	margin-bottom: 0.6em;	
@@ -179,7 +179,7 @@ h3.post-title {
 	margin-top:0.4em;
 	padding-bottom:0.6em;
 	border-bottom: 1px solid #eee;
-	font-size: 0.5em;
+	font-size: 0.9em;
 	color: #444;
 }
 .post-title .feature-star {
