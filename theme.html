@@ -86,16 +86,17 @@
                         <a href="/tag/{{ tag }}">{{ tag }}</a>
                         {{ post.content }}
                         
-                        <div class="post-body">
-            <div class="post-content" data-type-cleanup="true">
-              {{ post.content }}
-            </div>
+                        
             
                       {% endfor %}
                       </span>
                     {% endif %}
                   </h3>
                 </section>
+                <div class="post-body">
+            <div class="post-content" data-type-cleanup="true">
+              {{ post.content }}
+            </div>
               {% endfor %}
           {% endif %}
       {% elif post %}
