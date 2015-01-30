@@ -95,8 +95,8 @@ strong {
 	font-weight: 700;
 }
 blockquote {
-	border-right: 0.4em solid #eee;
-	padding-right: 1.2em;
+	border-left: 0.4em solid #eee;
+	padding-left: 1.2em;
 	font-size: 1.3em;
 }
 hr{
@@ -105,7 +105,7 @@ hr{
 	background: #eee;
 }
 ul, ol {
-	margin-right: 3em; 
+	margin-left: 3em; 
 }
 code {
 	font-size:1.4em;
