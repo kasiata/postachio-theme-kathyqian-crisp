@@ -76,9 +76,9 @@
     <main id="content">
       {% if is_home or is_tag %}
           {% if posts %}
-              <!--{# Iterating over posts for the home page #}-->
-              <!-- {% for post in posts %}-->
-                <!-- <section class="{{ post.type }}">-->
+              {# Iterating over posts for the home page #}
+               {% for post in posts %}
+                 <section class="{{ post.type }}">
                    <div class="post-stamp">
             {% if post.type != 'page' %}
               {{ post.created_at|format_date }}
@@ -93,7 +93,8 @@
           </div>
           <h1 class="post-title">{{ post.title }}</h1>
           {{ post.content }}
-               <!-- </section>-->
+               </section>
+               <span class="separator"> &middot; </span>
               {% endfor %}
           {% endif %}
       {% elif post %}
