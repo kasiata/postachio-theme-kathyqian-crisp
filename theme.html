@@ -65,6 +65,9 @@
         <h6><a href="{{ site.base_url }}">Blog</a></h6>
         {% for page in pages %}
           <h6><a href="{{ page.permalink }}">{{ page.title }}</a></h6>
+          <li><a href="/tag/works" class="{{ set_active('/tag/works') }}">Works</a></li>
+          <li><a href="/tag/press" class="{{ set_active('/tag/press') }}">Press</a></li>
+          <li><a href="/tag/blog" class="{{ set_active('/tag/blog') }}">Blog</a></li>
         {% endfor %}
       {% endif %}
     </header>
