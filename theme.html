@@ -80,7 +80,7 @@
               {% for post in posts %}
                 <section class="{{ post.type }}">
                    <div class="post-stamp">
-          
+            {% if post.type != 'page' %}
               {{ post.created_at|format_date }}
             {% endif %}
             {% if post.tags %}
