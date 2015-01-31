@@ -81,19 +81,21 @@
                 <section class="{{ post.type }}">
                   <h1 class="post-title">
                     <a href="{{ post.permalink }}">{{ post.title }}</a>
-                    
+                    <div>
                     {{ post.created_at|format_date }}
                     {% if post.tags %}
                       <span class="taglist"> &middot; 
                       {% for tag in post.tags %}
                         <a href="/tag/{{ tag }}">{{ tag }}</a>
+                        </div>
                       {% endfor %}
-                      </span>
-                    {% endif %}
-                  </h1>
+                      
                    
           {{ post.content }}
            <span class="separator"> &middot; </span>
+           </span>
+                    {% endif %}
+                  </h1>
                 </section>
                
               {% endfor %}
