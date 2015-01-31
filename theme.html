@@ -91,10 +91,11 @@
                       </span>
                     {% endif %}
                   </h1>
-                   <h1 class="post-title">{{ post.title }}</h1>
+                   
           {{ post.content }}
+           <span class="separator"> &middot; </span>
                 </section>
-                <span class="separator"> &middot; </span>
+               
               {% endfor %}
           {% endif %}
       {% elif post %}
