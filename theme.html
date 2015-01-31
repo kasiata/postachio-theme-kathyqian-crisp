@@ -79,20 +79,20 @@
               {# Iterating over posts for the home page #}
               {% for post in posts %}
                 <section class="{{ post.type }}">
-                <h1 class="post-title">{{ post.title }}</h1>
+                   <div class="post-stamp">
+            {% if post.type != 'page' %}
+              {{ post.created_at|format_date }}
+            {% endif %}
+            {% if post.tags %}
+              <span class="taglist"> &middot; 
+              {% for tag in post.tags %}
+                <a href="/tag/{{ tag }}">{{ tag }}</a>
+              {% endfor %}
+              </span>
+            {% endif %}
+          </div>
+          <h1 class="post-title">{{ post.title }}</h1>
           {{ post.content }}
-                  <h3 class="post-title">
-                    <a href="{{ post.permalink }}">{{ post.title }}</a>
-                    <span class="separator"> &middot; </span>
-                    {{ post.created_at|format_date }}
-                    {% if post.tags %}
-                      <span class="taglist"> &middot; 
-                      {% for tag in post.tags %}
-                        <a href="/tag/{{ tag }}">{{ tag }}</a>
-                      {% endfor %}
-                      </span>
-                    {% endif %}
-                  </h3>
                 </section>
               {% endfor %}
           {% endif %}
