@@ -80,8 +80,7 @@
               {% for post in posts %}
               {{ post.created_at|format_date }}
                 <section class="{{ post.type }}">
-                   <span class="separator"> &middot; </span>
-           </span>
+                   
                   <h1 class="post-title">
                     <a href="{{ post.permalink }}">{{ post.title }}</a>
                    
@@ -92,10 +91,10 @@
                         <a href="/tag/{{ tag }}">{{ tag }}</a>
                         
                       {% endfor %}
-                        </section>
+                        
                    
           {{ post.content }}
-           
+           </section>
                     {% endif %}
                   </h1>
                  
