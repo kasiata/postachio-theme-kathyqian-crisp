@@ -81,7 +81,8 @@
                 <section class="{{ post.type }}">
                   <h1 class="post-title">
                     <a href="{{ post.permalink }}">{{ post.title }}</a>
-                   
+                   <span class="separator"> &middot; </span>
+           </span>
                     {{ post.created_at|format_date }}
                     {% if post.tags %}
                       <span class="taglist"> &middot; 
@@ -92,8 +93,7 @@
                       
                    
           {{ post.content }}
-           <span class="separator"> &middot; </span>
-           </span>
+           
                     {% endif %}
                   </h1>
                 </section>
