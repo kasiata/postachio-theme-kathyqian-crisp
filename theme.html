@@ -80,11 +80,9 @@
               {% for post in posts %}
               {{ post.created_at|format_date }}
                 <section class="{{ post.type }}">
-                   
                   <h1 class="post-title">
                     <a href="{{ post.permalink }}">{{ post.title }}</a>
-                   
-                    
+                  
                     {% if post.tags %}
                       <span class="taglist"> &middot; 
                       {% for tag in post.tags %}
@@ -92,13 +90,12 @@
                         
                       {% endfor %}
                         
-                   
+                     </section>
           {{ post.content }}
-           </section>
+         
                     {% endif %}
                   </h1>
                  
-              
                
               {% endfor %}
           {% endif %}
