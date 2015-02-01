@@ -88,8 +88,7 @@
                       <span class="taglist"> &middot; 
                       {% for tag in post.tags %}
                         <a href="/tag/{{ tag }}">{{ tag }}</a>
-                        <span class="separator"> &middot; </span>
-           </span>
+                        
                       {% endfor %}
                       
                    
@@ -254,6 +253,7 @@
           {% endif %}
           {% if pagination.next and pagination.prev %}
             <span class="separator">|</span>
+            
           {% endif %}
           {% if pagination.next %}
             <a class="older-posts" href="{{ pagination.next }}">Older &rarr;</a>
